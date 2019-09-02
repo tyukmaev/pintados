@@ -4,7 +4,9 @@
 body {
 	color: #FFF;
 	font-family: 'Rubik', sans-serif;
-	font-size: 15px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
 	letter-spacing: -0.03em;
 	background: #0D0D0D;
 }
@@ -83,7 +85,9 @@ a:hover {
 }
 .header .connect .phone {
 	display: inline-block;
-	padding: 2px 0 0;
+	padding: 1px 0 0;
+	font-size: 15px;
+	font-weight: 500;
 }
 
 
@@ -133,5 +137,134 @@ a:hover {
 
 
 
+/*ABOUT*/
+
+.about {
+	min-height: 670px;
+	padding: 90px 0 0;
+	background: url(../img/bg-about.png) no-repeat center top;
+}
+.about p.text {
+	padding: 50px 100px 0;
+	font-weight: 500;
+}
+.about p.textmore {
+	padding: 30px 0 0 230px;
+	font-size: 14px;
+}
+.about h2 {
+	position: absolute;
+	margin: -160px 0 0 410px;
+}
+.about .features {
+	padding: 145px 0 0 0;
+}
+.about .features .item {
+	width: 33%;
+	float: left;
+	margin: 0 0 55px;
+	text-align: center;
+}
+.about .features .item .image {
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	margin: 0 0 15px 0;
+	border: 1px solid #565656;
+	justify-content: center;
+}
+.about .features .item span {
+	display: block;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Oswald';
+	text-transform: uppercase;
+}
+.about .photo {
+	float: right;
+	margin: 35px 0 0;
+}
 
 
+
+/*GALLERY*/
+
+.gallery {
+	padding: 40px 0 0;
+}
+.gallery .row,
+.gallery .col-md-3 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.gallery a {
+	display: block;
+	overflow: hidden;
+}
+.gallery a img {
+	width: 100%;
+}
+.gallery a span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	transition: all 0.3s;
+	opacity: 0;
+}
+.gallery a span img {
+	display: block;
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	top: 50%;
+	left: 50%;
+	margin: -17px 0 0 -17px;
+}
+.gallery a:hover span {
+	opacity: 1;
+}
+
+
+
+/*CONTACTS*/
+
+.contacts .case {
+	padding: 40px 0;
+}
+.contacts .case span {
+	display: block;
+	margin: 35px 0 10px;
+	opacity: 0.5;
+}
+.contacts .case strong {
+	display: block;
+	
+	font-weight: normal;
+	font-family: 'Oswald';
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.contacts .case strong a {
+	display: inline-block;
+	margin: 0 0 15px;
+}
+.contacts .case h2 {
+	float: right;
+	margin: 60px 60px 0 0;
+	opacity: 0.1;
+}
+.contacts .map {
+	position: absolute;
+	width: 50%;
+	height: 550px;
+	overflow: hidden;
+	z-index: 200;
+	right: 0;
+}
+.contacts iframe {
+	width: 100%;
+	height: 580px;
+	border: none;
+}
