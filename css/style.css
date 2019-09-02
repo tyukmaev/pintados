@@ -184,6 +184,20 @@ a:hover {
 	float: right;
 	margin: 35px 0 0;
 }
+#miniCarousel a.carousel-control-next,
+#miniCarousel a.carousel-control-prev {
+	left: 0;
+	margin: 360px 0 0 0;
+	opacity: 0.3;
+	transition: all 0.3s;
+}
+#miniCarousel a.carousel-control-prev {
+	margin: 360px 0 0 -35px;
+}
+#miniCarousel a.carousel-control-next:hover,
+#miniCarousel a.carousel-control-prev:hover {
+	opacity: 1;
+}
 
 
 
